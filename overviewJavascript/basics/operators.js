@@ -39,6 +39,16 @@ function testTruthy(val) {
     return val ? console.log('truthy') : console.log('falsy');
 }
 
+/*
+value type/Result
+undefinded - false
+null - false
+Boolean - true is true and false is false
+Number - the result is false for +0, -0 or NaN; otherwise
+Strng - the result is false if the string is empty (the size is 0); otherwise, it is true (size> = 1)
+Object - true
+*/
+
 testTruthy(true);
 testTruthy(false);
 testTruthy(new Boolean(false));
